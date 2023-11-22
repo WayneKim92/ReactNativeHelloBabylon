@@ -4,14 +4,20 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios실행 가이드": "@babylonjs에서 시뮬레이터를 지원하지 않아서, 실기기에서 돌려야함",
+    "ios": "react-native run-ios --device",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
   },
   "dependencies": {
+    "@babylonjs/core": "^6.30.0",
+    "@babylonjs/loaders": "^6.30.0",
+    "@babylonjs/react-native": "^1.6.3",
+    "@babylonjs/react-native-iosandroid-0-71": "^1.6.3",
     "react": "18.2.0",
-    "react-native": "0.71.14"
+    "react-native": "0.71.14",
+    "react-native-permissions": "^3.10.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
