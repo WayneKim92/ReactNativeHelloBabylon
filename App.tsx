@@ -1,7 +1,7 @@
-import AddBoxExample from './src/AddBoxExample';
+import ExplosionExample from './src/ExplosionExample';
 
 function App() {
-  return <AddBoxExample />;
+  return <ExplosionExample />;
 }
 
 export default App;
