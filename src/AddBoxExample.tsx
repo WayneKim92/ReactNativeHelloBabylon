@@ -73,6 +73,10 @@ const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
 
   useEffect(() => {
     const listener = DeviceEventEmitter.addListener('onAddBox', () => {
+      if (scene === undefined) {
+        return;
+      }
+
       const box = MeshBuilder.CreateBox('box', {width: 1}, scene);
       box.position = new Vector3(0, 10, 0);
       box.physicsImpostor = new PhysicsImpostor(
@@ -81,6 +85,17 @@ const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
         {mass: 1, restitution: 1},
         scene,
       );
+      box.metadata = {createdAt: Date.now()};
+
+      if (scene.meshes.length > 20) {
+        const boxs = scene.meshes.filter(mesh => mesh.name === 'box');
+        if (boxs.length > 10) {
+          const oldestBox = boxs.sort(
+            (a, b) => a.metadata.createdAt - b.metadata.createdAt,
+          )[0];
+          oldestBox.dispose();
+        }
+      }
     });
 
     return () => {
