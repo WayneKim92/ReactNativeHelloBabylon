@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios실행 가이드": "@babylonjs에서 시뮬레이터를 지원하지 않아서, 실기기에서 돌려야함",
+    "ios run guide": "@babylonjs does not support the simulator, so you have to run it on a real device.",
     "ios": "react-native run-ios --device",
     "lint": "eslint .",
     "start": "react-native start",
