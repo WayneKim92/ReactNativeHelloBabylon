@@ -16,6 +16,7 @@
     "@babylonjs/react-native": "^1.7.5",
     "@babylonjs/react-native-iosandroid-0-71": "^1.7.5",
     "cannon": "^0.6.2",
+    "earcut": "^2.2.4",
     "react": "18.2.0",
     "react-native": "0.71.14",
     "react-native-permissions": "^3.10.1"
@@ -27,6 +28,7 @@
     "@react-native-community/eslint-config": "^3.2.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/cannon": "^0.1.12",
+    "@types/earcut": "^2.1.4",
     "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",
     "@types/react-test-renderer": "^18.0.0",

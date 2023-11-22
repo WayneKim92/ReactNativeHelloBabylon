@@ -1,7 +1,7 @@
-import ExplosionExample from './src/ExplosionExample';
+import TextExample from './src/TextExample';
 
 function App() {
-  return <ExplosionExample />;
+  return <TextExample />;
 }
 
 export default App;
