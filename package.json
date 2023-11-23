@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios run guide": "@babylonjs does not support the simulator, so you have to run it on a real device.",
+    "ios run guide": "@babylonjs does not support simulators, so you have to run it on a real device.",
     "ios": "react-native run-ios --device",
     "lint": "eslint .",
     "start": "react-native start",
