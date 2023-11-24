@@ -1,7 +1,7 @@
-import TextExample from './src/TextExample';
+import DiceExample from './src/DiceExample';
 
 function App() {
-  return <TextExample />;
+  return <DiceExample />;
 }
 
 export default App;
